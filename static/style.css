@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.chat-container {
+    width: 80%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.chat-box {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+.input-container {
+    display: flex;
+}
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.input-container button {
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.input-container button:hover {
+    background: #0056b3;
+}
+/* Styling for messages */
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    max-width: 80%;
+}
+.user {
+    background-color: #d1f7d1;  /* Light green for user message */
+    align-self: flex-start;
+}
+.bot {
+    background-color: #f1f1f1;  /* Light grey for bot message */
+    align-self: flex-end;
+}
+.offensive {
+    background-color: #ffdddd;  /* Light red for offensive messages */
+}
+.non-offensive {
+    background-color: #ddffdd;  /* Light green for non-offensive messages */
+}
